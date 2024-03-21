@@ -20,7 +20,7 @@ let weather = {
     humidity: 20,
   },
 };
-
+/*
 // get a city from the user's input
 let city = prompt("Enter a city?");
 
@@ -51,3 +51,32 @@ if (weather[city] !== undefined) {
 
   alert(errorMessage);
 }
+*/
+
+// functionality to update the date the display the current day and time
+
+// getDate() returns the updated date as a string
+function getDate() {
+  let now = new Date();
+
+  // creating an array to get the string for the day of the week, since Date objects return an integer for the day of the week
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+  let time = `${now.getHours()}:${now.getMinutes()}`;
+
+  let dateString = `${day} ${time}`;
+  return dateString;
+}
+
+let currentDate = document.querySelector("#current-date");
+let updatedDate = getDate();
+
+currentDate.innerHTML = updatedDate;
