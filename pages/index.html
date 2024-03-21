@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My weather application</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <form>
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+          />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div id="location-data">
+            <h1>Paris</h1>
+            <p>Saturday 15:32, moderate rain</p>
+            <p />
+            <p>
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div id="weather-data">
+            <span class="symbol">☀️</span><span class="temperature">14</span
+            ><span class="unit">°C</span>
+          </div>
+        </div>
+        <div class="forecast-weather">
+          <ul>
+            <li class="forecast-day">
+              <div class="forecast-time">Sun</div>
+              <div class="forecast-symbol">🌤️</div>
+              <div class="forecast-temp">
+                <strong class="temp-max">14°C</strong>
+                <span class="temp-min">18°C</span>
+              </div>
+            </li>
+            <li class="forecast-day">
+              <div class="forecast-time">Mon</div>
+              <div class="forecast-symbol">🌤️</div>
+              <div class="forecast-temp">
+                <strong class="temp-max">14°C</strong>
+                <span class="temp-min">18°C</span>
+              </div>
+            </li>
+            <li class="forecast-day">
+              <div class="forecast-time">Tue</div>
+              <div class="forecast-symbol">🌤️</div>
+              <div class="forecast-temp">
+                <strong class="temp-max">14°C</strong>
+                <span class="temp-min">18°C</span>
+              </div>
+            </li>
+            <li class="forecast-day">
+              <div class="forecast-time">Wed</div>
+              <div class="forecast-symbol">🌤️</div>
+              <div class="forecast-temp">
+                <strong class="temp-max">14°C</strong>
+                <span class="temp-min">18°C</span>
+              </div>
+            </li>
+            <li class="forecast-day">
+              <div class="forecast-time">Thu</div>
+              <div class="forecast-symbol">🌤️</div>
+              <div class="forecast-temp">
+                <strong class="temp-max">14°C</strong>
+                <span class="temp-min">18°C</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Megan Middleton</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+
+    <!-- link to JS for this page-->
+    <script src="/src/index.js"></script>
+  </body>
+</html>
