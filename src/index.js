@@ -59,7 +59,7 @@ if (weather[city] !== undefined) {
 function getDate() {
   let now = new Date();
 
-  // creating an array to get the string for the day of the week, since Date objects return an integer for the day of the week
+  // creating an array to get the string for the day, since Date objects store an integer for the day of the week
   let days = [
     "Sunday",
     "Monday",
@@ -76,7 +76,34 @@ function getDate() {
   return dateString;
 }
 
-let currentDate = document.querySelector("#current-date");
-let updatedDate = getDate();
+// updateDate() updates the HTML with the current day and time
+function updateDate() {
+  let currentDate = document.querySelector("#current-date");
+  let updatedDate = getDate();
 
-currentDate.innerHTML = updatedDate;
+  currentDate.innerHTML = updatedDate;
+}
+
+updateDate();
+
+// functionality for search form
+
+// getSearchInput() returns the input that the user entered into the city search form
+function getSearchInput() {
+  let searchInput = document.querySelector("#search-input").value;
+  return searchInput;
+}
+
+// updates the page title with the city that was searched for
+function updateCity(event) {
+  event.preventDefault();
+  let searchInput = getSearchInput();
+  let title = document.querySelector("h1");
+  title.innerHTML = searchInput;
+
+  // also update the current time displayed
+  updateDate();
+}
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", updateCity);
