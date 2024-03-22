@@ -70,9 +70,16 @@ function getDate() {
     "Saturday",
   ];
   let day = days[now.getDay()];
-  let time = `${now.getHours()}:${now.getMinutes()}`;
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
 
-  let dateString = `${day} ${time}`;
+  // handle the case when minutes is a single digit
+  if (minutes < 10) {
+    // format minutes to start with a 0
+    minutes = `0${minutes}`;
+  }
+
+  let dateString = `${day} ${hours}:${minutes}`;
   return dateString;
 }
 
