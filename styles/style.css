@@ -36,7 +36,7 @@ strong {
   justify-content: space-evenly;
 }
 
-.app form #search-input {
+.app form .search-input {
   background: #f9f7fe;
   border: none;
   border-radius: 6px;
@@ -47,7 +47,7 @@ strong {
   width: 75%;
 }
 
-.app form #search-button {
+.app form .search-button {
   color: #ffffff;
   background: #885df1;
   border: none;
@@ -59,7 +59,7 @@ strong {
   width: 22%; /* Not 25% so we can have some space between the button and the form input*/
 }
 
-.app form #search-button:hover {
+.app form .search-button:hover {
   cursor: pointer;
 }
 

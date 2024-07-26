@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My weather application</title>
@@ -9,28 +10,30 @@
   <body>
     <div class="app">
       <header>
-        <form id="search-form">
+        <form>
           <input
-            id="search-input"
+            class="search-input"
             type="search"
-            placeholder="Enter a city..."
+            name="search"
+            placeholder="Enter a city.."
             required
           />
-          <input id="search-button" type="submit" value="Search" />
+          <input class="search-button" type="submit" value="Search" />
         </form>
       </header>
       <main>
         <div class="current-weather">
           <div id="location-data">
-            <h1>Paris</h1>
+            <h1 id="city-name">Paris</h1>
             <p><span id="current-date">Saturday 15:32</span>, moderate rain</p>
-            <p />
             <p>
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              Humidity: <strong><span id="current-humidity">87</span>%</strong>,
+              Wind: <strong>7.2 km/m</strong>
             </p>
           </div>
           <div id="weather-data">
-            <span class="symbol">☀️</span><span class="temperature">14</span
+            <span class="symbol">☀️</span
+            ><span class="temperature" id="current-temp">14</span
             ><span class="unit">°C</span>
           </div>
         </div>
@@ -83,13 +86,14 @@
       <footer>
         <p>
           This project was coded by
-          <a href="#" target="_blank">Megan Middleton</a> and is
+          <a href="#" target="_blank">Megan</a> and is
           <a href="#" target="_blank"> on GitHub</a> and
           <a href="#" target="_blank">hosted on Netlify</a>
         </p>
       </footer>
     </div>
+
+    <!-- link to JS for this page-->
+    <script src="/src/index.js"></script>
   </body>
-  <!-- link to JS for this page-->
-  <script src="/src/index.js"></script>
 </html>
