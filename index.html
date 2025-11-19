@@ -1,105 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather application</title>
-    <link rel="stylesheet" href="/style.css" />
+    <title>Weather App</title>
   </head>
   <body>
-    <div class="app">
-      <header>
-        <form>
-          <input
-            class="search-input"
-            type="search"
-            name="search"
-            placeholder="Enter a city.."
-            required
-          />
-          <input class="search-button" type="submit" value="Search" />
-        </form>
-      </header>
-      <main>
-        <div class="current-weather">
-          <div id="location-data">
-            <h1 id="city-name">Paris</h1>
-            <p><span id="current-date">Saturday 15:32</span>, moderate rain</p>
-            <p>
-              Humidity: <strong><span id="current-humidity">87</span>%</strong>,
-              Wind: <strong>7.2 km/m</strong>
-            </p>
-          </div>
-          <div id="weather-data">
-            <span class="symbol">☀️</span
-            ><span class="temperature" id="current-temp">14</span
-            ><span class="unit">°C</span>
-          </div>
-        </div>
-        <div class="forecast-weather">
-          <ul>
-            <li class="forecast-day">
-              <div class="forecast-time">Sun</div>
-              <div class="forecast-symbol">🌤️</div>
-              <div class="forecast-temp">
-                <strong class="temp-max">14°C</strong>
-                <span class="temp-min">18°C</span>
-              </div>
-            </li>
-            <li class="forecast-day">
-              <div class="forecast-time">Mon</div>
-              <div class="forecast-symbol">🌤️</div>
-              <div class="forecast-temp">
-                <strong class="temp-max">14°C</strong>
-                <span class="temp-min">18°C</span>
-              </div>
-            </li>
-            <li class="forecast-day">
-              <div class="forecast-time">Tue</div>
-              <div class="forecast-symbol">🌤️</div>
-              <div class="forecast-temp">
-                <strong class="temp-max">14°C</strong>
-                <span class="temp-min">18°C</span>
-              </div>
-            </li>
-            <li class="forecast-day">
-              <div class="forecast-time">Wed</div>
-              <div class="forecast-symbol">🌤️</div>
-              <div class="forecast-temp">
-                <strong class="temp-max">14°C</strong>
-                <span class="temp-min">18°C</span>
-              </div>
-            </li>
-            <li class="forecast-day">
-              <div class="forecast-time">Thu</div>
-              <div class="forecast-symbol">🌤️</div>
-              <div class="forecast-temp">
-                <strong class="temp-max">14°C</strong>
-                <span class="temp-min">18°C</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </main>
-
-      <footer>
-        <p>
-          This project was coded by
-          <a href="https://github.com/git-megan" target="_blank">Megan M</a> and
-          is
-          <a href="https://github.com/git-megan/weather-app" target="_blank">
-            on GitHub</a
-          >
-          and
-          <a href="https://git-megan-weather.netlify.app/" target="_blank"
-            >hosted on Netlify</a
-          >
-        </p>
-      </footer>
-    </div>
-
-    <!-- link to JS for this page-->
-    <script src="/index.js"></script>
+    <h1>Welcome to the Weather App</h1>
+    <footer>Coded by Megan M.</footer>
   </body>
 </html>
